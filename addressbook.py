@@ -2,10 +2,10 @@
 
 from collections import UserDict
 from datetime import datetime
-from .information import PrintHelpAddressBook
+from information import PrintHelpAddressBook
 import pickle
 from prompt_toolkit import prompt
-from .prompt_tool import Completer, RainbowLexer
+from prompt_tool import Completer, RainbowLexer
 import re
 
 
@@ -336,6 +336,12 @@ def search(*args, **kwargs: AddressBook):
     return f"On request <{s_search}> found these contacts"
 
 
+@decor_error
+def info_a(*args, **kwargs):
+    new = PrintHelpAddressBook()
+    return new.help_info()
+
+
 def exit_save_change(ab: AddressBook):
     """Request to save information"""
 
@@ -382,7 +388,8 @@ COMMANDS = {
     add_email: "email",
     add_address: "address",
     next_birthdays: "nxbirth",
-    search: "sear"
+    search: "sear",
+    info_a: "info"
 }
 
 
@@ -412,8 +419,6 @@ def main():
         command, data = parser_command(user_input)
         if not command:
             print("\nSorry, I don't understand you!")
-        elif command == "info":
-            new_session.help_info()
         else:
             print(command(*data, ab=ab))
 

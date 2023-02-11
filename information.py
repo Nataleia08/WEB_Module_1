@@ -60,7 +60,7 @@ class PrintHelpNoteBook(BasePrintHelp):
             f"\n>., close, exit<: exit:  >command<" \
             f"\n{'~' * 50}"
 
-    def start_info():
+    def start_info(self):
         """start info for NoteBook"""
         return f"\n{'~' * 17}" \
             f"\n N O T E B O O K " \

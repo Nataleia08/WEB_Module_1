@@ -2,8 +2,8 @@
 
 
 from collections import UserDict, UserString
-from .information import PrintHelpAddressBook, PrintHelpNoteBook
-from .prompt_tool import Completer, RainbowLexer
+from information import PrintHelpNoteBook
+from prompt_tool import Completer, RainbowLexer
 from prompt_toolkit import prompt
 import pickle
 
@@ -242,6 +242,12 @@ def exit_save_change(nb: NoteBook):
     print("Good bye!")
 
 
+@decor_error
+def info_n(*args, **kwargs):
+    new = PrintHelpNoteBook()
+    return new.help_info()
+
+
 """Dictionary with commands(key - function: value - command)"""
 
 COMMANDS = {
@@ -251,7 +257,8 @@ COMMANDS = {
     add_tag: "tag+",
     find: "find",
     find_sort_tags: "tags",
-    show_all: "show"
+    show_all: "show",
+    info_n: "info"
 }
 
 
@@ -281,8 +288,6 @@ def main():
             command, data = parser_command(user_input)
             if not command:
                 print("Sorry, I don't understand you!\n")
-            elif command == "info":
-                new_session.help_info()
             else:
                 print(command(*data, nb=nb))
         else:
