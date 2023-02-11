@@ -2,7 +2,7 @@
 
 
 from collections import UserDict, UserString
-from .information import start_info_nb, help_info_nb
+from .information import PrintHelpAddressBook, PrintHelpNoteBook
 from .prompt_tool import Completer, RainbowLexer
 from prompt_toolkit import prompt
 import pickle
@@ -251,8 +251,7 @@ COMMANDS = {
     add_tag: "tag+",
     find: "find",
     find_sort_tags: "tags",
-    show_all: "show",
-    help_info_nb: "info"
+    show_all: "show"
 }
 
 
@@ -268,11 +267,13 @@ def parser_command(user_input: str):
 def main():
     """Main function"""
 
-    print(start_info_nb())
+    new_session = PrintHelpNoteBook()
+    print(new_session.start_info())
     nb = read_from_file(filename)
 
     while True:
-        user_input = prompt("Enter command>>>", completer=Completer, lexer=RainbowLexer())
+        user_input = prompt("Enter command>>>",
+                            completer=Completer, lexer=RainbowLexer())
         if user_input:
             if user_input.lower() in ["close", "exit", "."]:
                 exit_save_change(nb)
@@ -280,6 +281,8 @@ def main():
             command, data = parser_command(user_input)
             if not command:
                 print("Sorry, I don't understand you!\n")
+            elif command == "info":
+                new_session.help_info()
             else:
                 print(command(*data, nb=nb))
         else:

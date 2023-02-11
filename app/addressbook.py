@@ -2,7 +2,7 @@
 
 from collections import UserDict
 from datetime import datetime
-from .information import start_info_ab, help_info_ab
+from .information import PrintHelpAddressBook
 import pickle
 from prompt_toolkit import prompt
 from .prompt_tool import Completer, RainbowLexer
@@ -64,7 +64,8 @@ class Phone(Filed):
             .replace(" ", "")
         )
         if not new_value.isdigit():
-            print(f"!!! Entered wrong phone: {new_value}, correct phone: 0674523698")
+            print(
+                f"!!! Entered wrong phone: {new_value}, correct phone: 0674523698")
         elif len(new_value) == 12:
             new_value = "+" + new_value
             self._value = new_value
@@ -72,7 +73,8 @@ class Phone(Filed):
             new_value = "+38" + new_value
             self._value = new_value
         else:
-            print(f"!!! Entered wrong phone: {new_value}, correct phone: 0674523698")
+            print(
+                f"!!! Entered wrong phone: {new_value}, correct phone: 0674523698")
 
 
 class Birthday(Filed):
@@ -380,8 +382,7 @@ COMMANDS = {
     add_email: "email",
     add_address: "address",
     next_birthdays: "nxbirth",
-    search: "sear",
-    help_info_ab: "info",
+    search: "sear"
 }
 
 
@@ -398,17 +399,21 @@ def parser_command(user_input: str):
 def main():
     """Main function AddressBook"""
 
-    print(start_info_ab())
+    new_session = PrintHelpAddressBook()
+    print(new_session.start_info())
     ab = open_contacts_from_file()
 
     while True:
-        user_input = prompt("\nEnter command>>> ", completer=Completer, lexer=RainbowLexer())
+        user_input = prompt("\nEnter command>>> ",
+                            completer=Completer, lexer=RainbowLexer())
         if user_input.lower() in ["close", "exit", "."]:
             exit_save_change(ab)
             break
         command, data = parser_command(user_input)
         if not command:
             print("\nSorry, I don't understand you!")
+        elif command == "info":
+            new_session.help_info()
         else:
             print(command(*data, ab=ab))
 
