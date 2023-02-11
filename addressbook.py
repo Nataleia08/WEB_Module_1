@@ -6,6 +6,7 @@ from information import PrintHelpAddressBook
 import pickle
 from prompt_toolkit import prompt
 from prompt_tool import Completer, RainbowLexer
+from information import BasePrint
 import re
 
 
@@ -306,16 +307,24 @@ def next_birthdays(*args, **kwargs: AddressBook):
     return f"Who to congratulate on his birthday!!!"
 
 
+class PrintAddressBook(BasePrint):
+    def show_all(self, *args, **kwargs: AddressBook):
+        """Displaying the contents of the contact book"""
+
+        ab = kwargs.get('ab')
+        result = f'Contacts list:\n'
+        print_list = ab.iterator()
+        for item in print_list:
+            result += f"{item}"
+        return result
+
+
 @decor_error
-def show_all(*args, **kwargs: AddressBook):
+def show_all_a(*args, **kwargs: AddressBook):
     """Displaying the contents of the contact book"""
 
-    ab = kwargs.get('ab')
-    result = f'Contacts list:\n'
-    print_list = ab.iterator()
-    for item in print_list:
-        result += f"{item}"
-    return result
+    new = PrintAddressBook()
+    return new.show_all(*args, **kwargs)
 
 
 @decor_error
@@ -382,7 +391,7 @@ COMMANDS = {
     add_phone: "add ",
     change: "change",
     phone: "phone",
-    show_all: "show",
+    show_all_a: "show",
     delete: "del",
     add_birthday: "birth",
     add_email: "email",

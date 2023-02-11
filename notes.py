@@ -4,6 +4,7 @@
 from collections import UserDict, UserString
 from information import PrintHelpNoteBook
 from prompt_tool import Completer, RainbowLexer
+from information import BasePrint
 from prompt_toolkit import prompt
 import pickle
 
@@ -215,16 +216,23 @@ def find_sort_tags(*args, **kwargs: NoteBook):
     return nb.find_sort_tags(tags)
 
 
+class PrintNotes(BasePrint):
+    def show_all(self, *args, **kwargs: NoteBook):
+        """Display the contents of a NoteBook"""
+        nb = kwargs.get('nb')
+        result = f'Notes list:\n'
+        iter = nb.note_iterator()
+        for item in iter:
+            result += item
+        return result
+
+
 @decor_error
-def show_all(*args, **kwargs: NoteBook):
+def show_all_n(*args, **kwargs: NoteBook):
     """Display the contents of a NoteBook"""
 
-    nb = kwargs.get('nb')
-    result = f'Notes list:\n'
-    iter = nb.note_iterator()
-    for item in iter:
-        result += item
-    return result
+    new = PrintNotes()
+    return new.show_all(*args, **kwargs)
 
 
 def exit_save_change(nb: NoteBook):
@@ -257,7 +265,7 @@ COMMANDS = {
     add_tag: "tag+",
     find: "find",
     find_sort_tags: "tags",
-    show_all: "show",
+    show_all_n: "show",
     info_n: "info"
 }
 

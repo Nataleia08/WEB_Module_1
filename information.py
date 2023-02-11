@@ -2,6 +2,12 @@
 from abc import abstractmethod, ABCMeta
 
 
+class BasePrint(metaclass=ABCMeta):
+    @abstractmethod
+    def show_all(self):
+        pass
+
+
 class BasePrintHelp(metaclass=ABCMeta):
     @abstractmethod
     def help_info(self):
