@@ -1,13 +1,17 @@
 [tool.poetry]
-name = "hw2"
+name = "web-module-2"
 version = "0.1.0"
-description = ""
+description = "Chatbot"
 authors = ["Nataleia Orlovska <nataleia.orlovska@gmail.com>"]
 readme = "README.md"
+packages = [{include = "web_module_2"}]
 
 [tool.poetry.dependencies]
-python = "3.10"
+python = "3.10.2"
 
+[tool.poetry.group.dev.dependencies]
+rarfile = "4.0"
+prompt-toolkit = "3.0.36"
 
 [build-system]
 requires = ["poetry-core"]

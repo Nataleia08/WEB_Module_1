@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ba260208-18c6-40d6-9442-976ec8b3d8c8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw2/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw2/hw2/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw2/pyproject.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw2/tests/__init__.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +28,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
