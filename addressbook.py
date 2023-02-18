@@ -181,7 +181,7 @@ def decor_error(func):
 
 @decor_error
 def hello(*args, **kwargs: AddressBook):
-
+    return "How can I help you?\n"
 
 @decor_error
 def add_phone(*args, **kwargs: AddressBook):

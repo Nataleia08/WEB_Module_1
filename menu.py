@@ -1,24 +1,12 @@
 """C H A T B O T"""
 
-from app.addressbook import main as ab_main
-from app.notes import main as nb_main
-from app.sort import main as sr_main
-import logging
-from app.logger import get_logger
-
-def logging_main():
-    logger.info('Дані адресної книги та нотатків')
-    logger.debug("Дані по діям користувача")
-    try:
-        pass
-    except Exception as err:
-        logger.error(f'[ERROR] {err}') # тут логгуємо помилки, будуть записані в файл
+from addressbook import main as ab_main
+from notes import main as nb_main
+from sort import main as sr_main
 
 
 def main():
     """Main function"""
-    logger.log(level=logging.DEBUG, msg=f"Start")
-    logging_main()
     while True:
         print(f"\n{'~' * 15}\nC H A T B O T\n{'~' * 15}")
         print(

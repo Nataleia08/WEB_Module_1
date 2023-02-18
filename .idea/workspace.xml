@@ -3,19 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="ba260208-18c6-40d6-9442-976ec8b3d8c8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AddressBook.bin" beforeDir="false" afterPath="$PROJECT_DIR$/data/AddressBook.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/address_command.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/address_command.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/addressbook.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/information.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/information.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/logger.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/notes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prompt_tool.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/prompt_tool.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/sort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/address_command.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/addressbook.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/information.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/logger.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/menu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/notes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/prompt_tool.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sort.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +34,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/menu.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -44,6 +42,34 @@
       <recent name="C:\Users\NOrlovskaya\Documents\GitHub\WEB_Module_2\app" />
       <recent name="C:\Users\NOrlovskaya\Documents\GitHub\WEB_Module_2\data" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="menu" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="WEB_Module_2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/menu.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.menu" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
