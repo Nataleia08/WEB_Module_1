@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba260208-18c6-40d6-9442-976ec8b3d8c8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/address_command.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/addressbook.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/information.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/logger.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/menu.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/notes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/prompt_tool.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/setup.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sort.py" beforeDir="false" />
-    </list>
+    <list default="true" id="ba260208-18c6-40d6-9442-976ec8b3d8c8" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
