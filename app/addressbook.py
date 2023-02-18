@@ -10,7 +10,7 @@ from information import BasePrint
 import re
 
 
-filename = "addressbook.bin"
+filename = "../data/AddressBook.bin"
 
 
 class AddressBook(UserDict):

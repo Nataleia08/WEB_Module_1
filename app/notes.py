@@ -2,9 +2,9 @@
 
 
 from collections import UserDict, UserString
-from information import PrintHelpNoteBook
-from prompt_tool import Completer, RainbowLexer
-from information import BasePrint
+from app.information import PrintHelpNoteBook
+from app.prompt_tool import Completer, RainbowLexer
+from app.information import BasePrint
 from prompt_toolkit import prompt
 import pickle
 

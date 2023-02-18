@@ -1,4 +1,4 @@
-from addressbook import AddressBook
+from app.addressbook import AddressBook
 
 
 class Operation:

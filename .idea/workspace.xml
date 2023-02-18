@@ -3,10 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="ba260208-18c6-40d6-9442-976ec8b3d8c8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw2/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw2/hw2/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw2/pyproject.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw2/tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AddressBook.bin" beforeDir="false" afterPath="$PROJECT_DIR$/data/AddressBook.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/address_command.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/address_command.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/addressbook.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/information.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/information.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/logger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/notes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prompt_tool.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/prompt_tool.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/sort.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +38,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\NOrlovskaya\Documents\GitHub\WEB_Module_2\app" />
+      <recent name="C:\Users\NOrlovskaya\Documents\GitHub\WEB_Module_2\data" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
